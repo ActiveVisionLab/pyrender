@@ -52,6 +52,9 @@ class RenderFlags(object):
     FLAT = 4096
     """Render the color buffer flat, with no lighting computations."""
     SEG = 8192
+    
+    NO_MULTISAMPLE = 16384
+    """Disable OpenGL multisampling. Useful for flat rendering where exact colour is desired"""
 
 
 class TextAlign:
